@@ -1,12 +1,12 @@
 <div class="dashboard">
-  <div class="dashboard-item">
+  <div *ngFor="let item of dashboardItems" class="dashboard-item">
     <div class="theme-color"></div>
-    <div class="item">
-      <div>
-        <label class="title"> Work </label>
-        <div class="active">32hrs</div>
-        <div class="last-active">Last Week - 36hrs</div>
+    <div  class="item">
+      <div >
+        <label class="title"> {{item.title}}</label>
+        <div class="active">{{item.time}}</div>
+        <div class="last-active">{{item.active}}</div>
       </div>
-         </div>
-   </div>
+    </div>
+  </div>
 </div>

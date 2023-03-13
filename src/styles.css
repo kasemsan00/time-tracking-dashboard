@@ -38,16 +38,16 @@ body {
 }
 .item {
   background-color: var(--dark-blue);
-  position: absolute;
   border-radius: 10px;
   width: 100%;
   margin-top: 40px;
 }
+
 .dashboard-item {
   position: relative;
   border-radius: 10px;
   width: 400px;
-  height: 400px;
+  height: 140px;
 }
 .title, .active, .last-active {
   padding: 20px;
