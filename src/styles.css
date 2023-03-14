@@ -27,6 +27,8 @@ body {
   background-color: var(--very-dark-blue);
 }
 .dashboard {
+	display: flex;
+	justify-content: center;
 }
 .theme-color {
   position: absolute;
@@ -37,27 +39,33 @@ body {
   border-top-right-radius: 10px;
 }
 .item {
+	position: absolute;
   background-color: var(--dark-blue);
   border-radius: 10px;
   width: 100%;
-  margin-top: 40px;
+	margin-top: 44px;
 }
-
+.item > div {
+	padding: 20px;
+}
 .dashboard-item {
   position: relative;
+	display: inline-block;
   border-radius: 10px;
-  width: 400px;
-  height: 140px;
-}
-.title, .active, .last-active {
-  padding: 20px;
+  width: 250px;
+	min-width: 250px;
+  height: 210px;
+	margin: 10px;
 }
 .title {
   margin-top: 20px;
   color: white;
 }
 .active {
+	margin-top: 20px;
   color: white;
+	font-size: 60px;
+	font-weight: normal;
 }
 .last-active {
   color: var(--pale-blue);
