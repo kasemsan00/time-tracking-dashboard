@@ -1,6 +1,9 @@
 <div class="dashboard">
-  <div *ngFor="let item of dashboardItems" class="dashboard-item">
-    <div class="theme-color"></div>
+  <app-profile/>
+  <div class="dashboard-item" *ngFor="let item of dashboardItems"  >
+    <div class="theme-color" [style.background-color]="item.color">
+      <img src="{{item.icon}}" alt="icon" class="icon">
+    </div>
     <div  class="item">
       <div>
         <label class="title"> {{item.title}}</label>
