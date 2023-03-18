@@ -27,8 +27,6 @@ body {
   background-color: var(--very-dark-blue);
 }
 .dashboard {
-  max-width: 1000px;
-  height: 600px;
   text-align: center;
   margin: 0;
   position: absolute;
@@ -66,19 +64,27 @@ body {
   background-color: var(--dark-blue);
   border-radius: 15px;
   width: 100%;
+  height: 100%;
   margin-top: 44px;
   text-align: left;
   cursor: pointer;
 }
+.item > div:nth-child(1) {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 20px 0px;
+}
+.item > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0px;
+}
 .item:hover {
   background-color: var(--desaturated-blue);
 }
-.item > div {
-  padding: 20px;
-}
-
 .title {
-  margin-top: 20px;
   color: white;
 }
 .more {
@@ -92,7 +98,6 @@ body {
   letter-spacing: 2px;
 }
 .active {
-  margin-top: 20px;
   color: white;
   font-size: 60px;
   font-weight: normal;
@@ -144,7 +149,7 @@ body {
   font-size: 40px;
 }
 .profile-time {
-  background-color: var(--dark-blue);
+  /*background-color: var(--dark-blue);*/
 }
 .profile-time > div {
   color: var(--desaturated-blue);
@@ -168,7 +173,7 @@ body {
     gap: 15px;
   }
   .dashboard-item {
-    height: 200px;
+    height: 150px;
   }
   .profile-avatar,
   .profile-avatar > img {
@@ -218,5 +223,44 @@ body {
     grid-row-start: 1;
     grid-column-start: 1;
     grid-row-end: 1;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .active {
+    font-size: 24px;
+  }
+  .last-active {
+    font-size: 14px;
+    position: absolute;
+    color: var(--pale-blue);
+    right: 0;
+    margin-right: 20px;
+  }
+  .item {
+    position: absolute;
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 44px;
+    text-align: left;
+    cursor: pointer;
+  }
+  .item > div:nth-child(1) {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 20px 0px;
+  }
+  .item > div:nth-child(2) {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 20px 0px;
+  }
+  .profile-time > div {
+    font-size: 15px;
   }
 }
