@@ -74,17 +74,16 @@ body {
   flex: 1;
   flex-direction: row;
   align-items: center;
-  padding: 20px 20px 0px;
+  padding: 20px 20px 0;
 }
 .item > div:nth-child(2) {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px 0px;
+  padding: 20px 20px 0;
 }
 .item:hover {
   background-color: var(--desaturated-blue);
 }
-=======
 .title {
   color: white;
 }
@@ -145,7 +144,6 @@ body {
   font-size: 12px;
   opacity: 0.5;
 }
-
 
 .profile-name {
   color: white;
@@ -254,14 +252,14 @@ body {
     flex: 1;
     flex-direction: row;
     align-items: center;
-    padding: 20px 20px 0px;
+    padding: 20px 20px 0;
   }
   .item > div:nth-child(2) {
     display: flex;
     flex: 1;
     flex-direction: row;
     align-items: center;
-    padding: 20px 20px 0px;
+    padding: 20px 20px 0;
   }
   .profile-time > div {
     font-size: 15px;
