@@ -84,6 +84,7 @@ body {
 .item:hover {
   background-color: var(--desaturated-blue);
 }
+=======
 .title {
   color: white;
 }
@@ -144,6 +145,8 @@ body {
   font-size: 12px;
   opacity: 0.5;
 }
+
+
 .profile-name {
   color: white;
   font-size: 40px;
