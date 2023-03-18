@@ -1,14 +1,17 @@
 <div class="dashboard">
-  <app-profile/>
-  <div class="dashboard-item" *ngFor="let item of dashboardItems"  >
+  <app-profile class="dashboard-item-profile" />
+  <div class="dashboard-item" *ngFor="let item of dashboardItems">
     <div class="theme-color" [style.background-color]="item.color">
-      <img src="{{item.icon}}" alt="icon" class="icon">
+      <img src="{{ item.icon }}" alt="icon" class="icon" />
     </div>
-    <div  class="item">
+    <div class="item">
       <div>
-        <label class="title"> {{item.title}}</label>
-        <div class="active">{{item.time}}</div>
-        <div class="last-active">{{item.active}}</div>
+        <div>
+          <label class="title"> {{ item.title }}</label>
+          <label class="more">...</label>
+        </div>
+        <div class="active">{{ item.time }}</div>
+        <div class="last-active">{{ item.active }}</div>
       </div>
     </div>
   </div>
